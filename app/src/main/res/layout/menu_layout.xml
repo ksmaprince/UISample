@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:background="#06114E">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivRent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_car"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent a car"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ivRent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivBooking"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_booking"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bookings"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ivBooking"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivReferFriend"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_card_giftcard_24"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refer a friend"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ivReferFriend"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivAccount"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/ivAccount"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

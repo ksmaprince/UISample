@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlSec1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_ico_address"
+                android:layout_margin="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/ivLocation"/>
+
+            <TextView
+                android:id="@+id/tvCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvLocation"
+                android:layout_toEndOf="@id/ivLocation"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlSec1"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <RelativeLayout
+                android:id="@+id/rlSec2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/border_square_gray">
+
+                <ImageView
+                    android:id="@+id/ivDateTime"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_ico_date_d"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tvDateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date &amp; Time"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivDateTime"/>
+
+                <TextView
+                    android:id="@+id/tvDateTimeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Now"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tvDateTime"
+                    android:layout_toEndOf="@id/ivDateTime"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSec3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/border_square_gray">
+
+                <ImageView
+                    android:id="@+id/ivTime"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_ico_time"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Duration"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/ivTime"/>
+
+                <TextView
+                    android:id="@+id/tvTimeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 hr"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tvTime"
+                    android:layout_toEndOf="@id/ivTime"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSec4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_square_green_solid">
+
+                <TextView
+                    android:id="@+id/tvGo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Go"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
